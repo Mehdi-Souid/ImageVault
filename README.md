@@ -84,8 +84,8 @@ To get started with the project, follow these steps:
 1. **Clone the repository:**
 
 ```bash
-git clone <repository_url>  
-cd <project_directory>
+git clone https://github.com/Mehdi-Souid/ImageVault.git  
+cd .\ai-image-gallery\
 ```
 2. **Install dependencies for both frontend and backend:**
 ```bash
