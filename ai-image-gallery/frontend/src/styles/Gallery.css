@@ -1,0 +1,38 @@
+/* Gallery Page Styles */
+.gallery-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #dbd9e8; /* Light Lavender */
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+/* Gallery Page Styles */
+.gallery-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #cab3e6; /* Soft Lavender */
+  overflow-y: auto;
+  display: grid;
+  padding-top: 80px;
+  padding-left: 90px;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); /* Flexibility for cards side by side */
+}
+
+  
+  .gallery-content h1 {
+    font-size: 28px;
+    color: #390038; /* Dark Purple */
+    margin-bottom: 10px;
+  }
+  
+  .gallery-content p {
+    font-size: 16px;
+    color: #7a3776; /* Medium Purple */
+  }
+  

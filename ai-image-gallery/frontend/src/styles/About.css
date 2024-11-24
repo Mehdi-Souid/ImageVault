@@ -1,0 +1,43 @@
+/* About Section Styles */
+.about-section {
+    padding: 80px 20px;
+    background-color: #cab3e6; /* Lavender */
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #390038; /* Dark Purple */
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #7a3776; /* Medium Purple */
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .feature {
+    text-align: center;
+  }
+  
+  .feature span {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #7a3776; /* Medium Purple */
+  }
+  
+  .feature p {
+    font-size: 16px;
+    color: #390038; /* Dark Purple */
+  }
+  

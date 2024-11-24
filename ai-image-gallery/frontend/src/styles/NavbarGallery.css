@@ -1,0 +1,97 @@
+/* Navbar Styles */
+.navbaro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Increased padding for better spacing */
+    background-color: #390038; /* Dark Purple */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Search Bar Container */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allow search bar to take available space */
+}
+
+/* Search Bar Styles */
+.search-bar {
+    width: 50%; /* Make the input field wider */
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #dbd9e8;
+    background-color: #ffffff; /* Light Purple */
+    color: rgb(0, 0, 0);
+    transition: width 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    width: 60%; /* Expand the input field on focus */
+    outline: none;
+    border-color: #af7bbd;
+}
+.search-icon {
+    font-size: 20px;
+    color: #dbd9e8; /* Light color for the icon */
+    margin-right: 10px; /* Space between icon and input */
+  }
+
+/* Profile Section */
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+/* Profile Icon Styling */
+.profile-icon {
+    font-size: 30px; /* Using icon size */
+    color: white;
+    cursor: pointer;
+    margin-right: 20px; /* Adjusted margin for better spacing */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    position: absolute;
+    top: 45px; /* Adjusted for better vertical spacing */
+    right: 0;
+    background-color: #dbd9e8; /* Light Lavender */
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Added gap between buttons for better separation */
+    width: 160px; /* Fixed width to avoid stretching */
+}
+
+/* Dropdown Button Styling */
+.dropdown-menu button {
+    background-color: #390038; /* Dark Purple */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%; /* Ensure buttons take full width */
+    text-align: left; /* Align text to the left */
+}
+
+.dropdown-menu button:hover {
+    background-color: #7a3776; /* Light Purple */
+}
+
+/* Adjustments for better spacing when not hovered */
+.navbar .search-bar-container {
+    margin-right: 20px;
+}

@@ -1,0 +1,43 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #390038; /* Dark Purple */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 40px;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #cab3e6; /* Lavender */
+  }
+  
+  .navbar .nav-buttons {
+    display: flex;
+    gap: 15px;
+    margin-right: 50px;
+  }
+  
+  .navbar .nav-buttons .btn {
+    background-color: #7a3776; /* Medium Purple */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+  }
+  
+  .navbar .nav-buttons .btn:hover {
+    background-color: #af7bbd; /* Light Purple */
+  }
+  

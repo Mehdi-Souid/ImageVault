@@ -1,0 +1,27 @@
+/* Global Styles for Home Page */
+.home {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #390038; /* Dark Purple */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #390038; /* Dark Purple */
+  }
+  
+  p {
+    font-size: 18px;
+    color: #7a3776; /* Medium Purple */
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  

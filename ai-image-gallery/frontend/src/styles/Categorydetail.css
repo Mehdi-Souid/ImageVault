@@ -1,0 +1,90 @@
+/* General container for the category detail page */
+.category-detail-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header style */
+  .category-detail-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Subheader for items and images */
+  .category-detail-subheader {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #555;
+    margin-top: 30px;
+  }
+  
+  /* Styling the list of category items */
+  .category-detail-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .category-detail-items li {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  /* Image grid container */
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  /* Each individual image styling */
+  .category-detail-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for images */
+  .category-detail-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Styling for error or no images message */
+  .no-images-message,
+  .loading-message,
+  .error-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  /* Styling the buttons for the category detail (like and share) */
+  .image-detail-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .image-detail-button {
+    padding: 10px 15px;
+    background-color: #5e9fef;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .image-detail-button:hover {
+    background-color: #4a8dc3;
+  }
+  

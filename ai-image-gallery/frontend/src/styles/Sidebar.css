@@ -1,0 +1,106 @@
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px; /* Collapsed width */
+  height: 100%;
+  background-color: #390038; /* Dark Purple */
+  transition: width 0.3s ease;
+  z-index: 10; /* Ensures it appears above other content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px; /* Space for the profile section */
+}
+
+.sidebar.expanded {
+  width: 200px; /* Expanded width */
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.profile-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.username {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.sidebar.expanded .username {
+  opacity: 1; /* Username visible when expanded */
+}
+
+/* Feature List */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Add space between list items */
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the left */
+  width: 100%; /* Full width for hover effect */
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.feature-list li:hover {
+  background-color: #7a3776; /* Light Purple */
+  padding-left: 20px; /* Slight hover padding effect */
+}
+
+.feature-list li span {
+  margin-left: 10px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.sidebar.expanded .feature-list li span {
+  opacity: 1; /* Make text visible when sidebar is expanded */
+}
+
+/* Icon Styles */
+.icon {
+  font-size: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 60px; /* Smaller width for mobile */
+  }
+
+  .sidebar.expanded {
+      width: 160px; /* Smaller expanded width for mobile */
+  }
+
+  .feature-list li span {
+      font-size: 14px; /* Smaller text size for mobile */
+  }
+
+  .profile-icon {
+      font-size: 30px; /* Adjusted size for mobile */
+  }
+}
