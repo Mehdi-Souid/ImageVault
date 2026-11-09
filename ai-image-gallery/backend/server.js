@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -15,8 +16,7 @@ app.use(cors()); // Replace with your frontend domain or allow all origins with 
 app.use(express.json()); // Body parsing is built into Express
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://NovaFury:azerty@bloody.kumzafl.mongodb.net/vocabdb?retryWrites=true&w=majority', {
-})
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => {
         console.error('MongoDB connection error:', err);

@@ -4,8 +4,8 @@ const FormData = require('form-data');
 
 const analyzeImage = async (imagePath) => {
     try {
-        const apiKey = 'acc_4c75aaa27a60afc'; // Replace with your Imagga API key
-        const apiSecret = '45ed7ac78fb652a09b55c6837c4020ee'; // Replace with your Imagga API secret
+        const apiKey = process.env.IMAGGA_API_KEY;
+        const apiSecret = process.env.IMAGGA_API_SECRET;
 
         // Prepare the image file in a form-data format for Imagga
         const form = new FormData();
